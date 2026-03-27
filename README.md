@@ -1,5 +1,6 @@
 # Banka_uygulamasi
 Java ile banka uygulaması
+
 Özellikler
 Kullanıcı adı ve şifre ile giriş sistemi
 3 hatalı giriş sonrası hesap bloke
