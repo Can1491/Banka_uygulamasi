@@ -11,6 +11,3 @@ Bakiye görüntüleme
 Para yatırma
 
 Para çekme
-
-Konsol tabanlı menü sistemi
-
