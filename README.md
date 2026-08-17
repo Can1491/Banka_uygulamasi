@@ -1,13 +1,31 @@
-# Banka_uygulamasi
-Java ile banka uygulaması
+# 🏦 Banka Uygulaması
 
-Özellikler
-Kullanıcı adı ve şifre ile giriş sistemi
+Java kullanılarak geliştirilmiş, temel bankacılık işlemlerini simüle eden konsol tabanlı banka uygulaması.
 
-3 hatalı giriş sonrası hesap bloke
+## 📌 Proje Hakkında
 
-Bakiye görüntüleme
+Bu proje, Java programlama dili kullanılarak temel bankacılık işlemlerinin ve kullanıcı doğrulama süreçlerinin uygulanması amacıyla geliştirilmiştir.
 
-Para yatırma
+Uygulama kullanıcı girişinden sonra hesap bilgilerine erişim ve temel para işlemlerinin gerçekleştirilmesini sağlar.
 
-Para çekme
+## ✨ Özellikler
+
+- 🔐 Kullanıcı adı ve şifre ile giriş
+- 🚫 3 hatalı giriş sonrasında hesap bloke etme
+- 💰 Bakiye görüntüleme
+- 💵 Para yatırma
+- 💸 Para çekme
+- 🔒 Temel hesap güvenliği kontrolleri
+
+## 🛠️ Kullanılan Teknolojiler
+
+- Java
+- Git
+- GitHub
+
+## ▶️ Çalıştırma
+
+Projeyi bilgisayarınıza klonlayın:
+
+```bash
+git clone https://github.com/Can1491/Banka_uygulamasi.git
