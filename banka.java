@@ -1,6 +1,6 @@
 package bankaa;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 public class banka {
 
@@ -8,7 +8,7 @@ public class banka {
 
         Scanner input = new Scanner(System.in);
 
-        //Giriş ekranı
+        // Giriş ekranı
         String dogruKullanici = "Can";
         String dogruSifre = "1234";
 
@@ -34,10 +34,11 @@ public class banka {
 
         if (hak == 0) {
             System.out.println("Hesap bloke edildi!");
+            input.close();
             return;
         }
 
-        //Banka ekranı
+        // Banka ekranı
         double bakiye = 1000;
         int secim;
 
@@ -52,6 +53,7 @@ public class banka {
             secim = input.nextInt();
 
             switch (secim) {
+
                 case 1:
                     System.out.println("Bakiyeniz: " + bakiye);
                     break;
@@ -59,16 +61,29 @@ public class banka {
                 case 2:
                     System.out.print("Yatırılacak miktar: ");
                     double yatir = input.nextDouble();
-                    bakiye += yatir;
-                    System.out.println("Yeni bakiye: " + bakiye);
+
+                    if (yatir > 0) {
+                        bakiye += yatir;
+                        System.out.println("Para yatırma başarılı.");
+                        System.out.println("Yeni bakiye: " + bakiye);
+                    } else {
+                        System.out.println(
+                                "Hata: Yatırılacak miktar 0'dan büyük olmalıdır."
+                        );
+                    }
                     break;
 
                 case 3:
                     System.out.print("Çekilecek miktar: ");
                     double cek = input.nextDouble();
 
-                    if (cek <= bakiye) {
+                    if (cek <= 0) {
+                        System.out.println(
+                                "Hata: Çekilecek miktar 0'dan büyük olmalıdır."
+                        );
+                    } else if (cek <= bakiye) {
                         bakiye -= cek;
+                        System.out.println("Para çekme başarılı.");
                         System.out.println("Yeni bakiye: " + bakiye);
                     } else {
                         System.out.println("Yetersiz bakiye!");
